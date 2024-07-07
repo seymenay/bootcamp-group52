@@ -5,7 +5,7 @@ Takım Flutter 52
 # Ürün İle İlgili Bilgiler
 "Sinefili", kullanıcıların film ve dizi deneyimlerini kolayca yönetebilecekleri bir mobil uygulamadır. Kullanıcılar, IMDb API'si aracılığıyla geniş bir film ve dizi veritabanına erişebilir, favori içeriklerini keşfedip listelerine ekleyebilir ve izlediklerini takip edebilirler. Ayrıca, profil özellikleri sayesinde diğer kullanıcılarla etkileşimde bulunabilir ve film/dizi yorumları ile puanlamaları yapabilirler.
 ## Takım Elemanları
-- Seymen AY: Scrum Master / Developer
+- Seymen Ay: Scrum Master / Developer
 - Emine Sena Top : Product Owner / Developer
 - Eylül Ezgi Özer: Aktif Olmayan Üye
 - Emirhan Özbay: Aktif Olmayan Üye
@@ -73,67 +73,89 @@ Takım Flutter 52
 Sprint İçinde Tamamlanması Tahmin Edilen Puan:
 Toplamda 25 puanlık iş tahmin edildi. Puanlama şöyle dağıldı:
 
-Figma tasarımı: 4 puan
-IMDb API entegrasyonu: 7 puan
-Giriş sayfasi: 3 puan
-profil sayfasi: 3 puan
-izleyecekler listesi: 3 puan
-Alt navbar ve ikonların eklenmesi: 2 puan
-Keşfet kısmında film ve dizi verilerinin gösterimi: 3 puan
-Puan Tamamlama Mantığı:
-Tahmin edilen 25 puanın 15 puanı tamamlandı. IMDb API entegrasyonu ve keşfet kısmındaki veri gösterimi başarıyla gerçekleştirildi. figma tasarimi yapildi. alt navbar da tamamlandı. Ancak, diziler ve filmler bölümlerindeki giris sayfasi, izlyecekler listesi ve profil sayfası henüz tamamlanmadı.
++ Figma tasarımı: 4 puan
++ IMDb API entegrasyonu: 7 puan
++ Giriş sayfasi: 3 puan
++ Profil sayfasi: 3 puan
++ İzleyecekler listesi: 3 puan
++ Alt navbar ve ikonların eklenmesi: 2 puan
++ Keşfet kısmında film ve dizi verilerinin gösterimi: 3 puan
 
-Backlog Düzeni ve Story Seçimleri:
+**Puan Tamamlama Mantığı:**
+Tahmin edilen 25 puanın 15 puanı tamamlandı. IMDb API entegrasyonu ve keşfet kısmındaki veri gösterimi başarıyla gerçekleştirildi, Figma tasarimi ve alt navbar da tamamlandı. Ancak, diziler ve filmler bölümlerindeki giris sayfasi, izleyecekler listesi ve profil sayfası henüz tamamlanmadı.
+
+**Backlog Düzeni - Story Seçimleri ve Sprint board update**: 
 Product Backlog ve sprint görevleri, iş gücü seviyelerine göre puanlandırılarak düzenlendi. En önemli ve acil görevler üst sıralara yerleştirildi. Story seçimleri:
-
-Figma tasarımı (5 puan)
-IMDb API entegrasyonu (5 puan)
-Giriş ekranı geliştirilmesi (3 puan)
-Alt navbar ve ikonlar (3 puan)
-Keşfet kısmında film ve dizi verileri gösterimi (4 puan)
-
-- **Daily Scrum**: Bu sprint boyunca 5 kişilik ekibimizden sadece 2 kişi aktif olarak çalıştı. Diğer takım üyeleriyle iletişim kuramadık ve projeye geç başladık. Sprint süresince, temel uygulama arayüzünü oluşturduk ve IMDb API'sini kullanarak birkaç film verisi çekebilen basit bir arayüz geliştirdik. Figma tasarımı da tamamlandı.
-
-Sprint Review:  Bu sprint boyunca,Figma’da uygulamanın temel arayüzünü tasarımını ve IMDb API entegrasyonunu tamamladık. Keşfet kısmında film ve dizi verilerini başarıyla çekip gösterebiliyoruz. Ancak, diziler ve filmler bölümlerindeki izlenecek/izlenen listeleri ve profil sayfası hala geliştirilme aşamasında.
-
-Daily Scrum: 5 kişilik ekibin 3 üyesi ile iletişim kurulamadığı için sadece 2 kişi çalışmak zorunda kaldık ve projeye geç başladık.Bu sebeple yalnızca iki günlük daily scruma sahibiz.
-1. Gün:
-Yapılanlar: Figma tasarımı üzerinde çalışıldı. Uygulamanın kullanıcı arayüzü tasarlandı ve temel ekranlar oluşturuldu.
-Karşılaşılan Sorunlar: Tasarım aşamasında birkaç kullanıcı deneyimi (UX) problemi yaşandı, ancak takım içi tartışmalarla çözüldü.
-Günlük Hedefler: Tüm ana ekranların ve kullanıcı akışlarının tasarımlarına başlamak ve ilerlemek.
-2. Gün:
-Yapılanlar: IMDb API ile veri çekimi yapıldı. API entegrasyonu sağlandı ve gerekli veriler uygulamaya başarıyla getirildi, Figma tasarımına devam edildi.
-Karşılaşılan Sorunlar: API entegrasyonu sırasında bazı bağlantı ve veri formatlama sorunları yaşandı, ancak dokümantasyon ve debug işlemleri ile çözüldü.
-Günlük Hedefler: API entegrasyonunu tamamlayarak, çekilen verileri uygulama içinde yerleştirmek.
+Sprint board screenshotları: 
 
 
-- **Sprint board update**: Sprint board screenshotları: 
-![Backlog 1]
+![sprint1](https://github.com/seymenay/bootcamp-group52/assets/114770554/136b4880-a5d6-4683-9067-8aa1693064e7)
 
 
-- **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1]
-  ![Screenshot 2]
-  ![Screenshot 3]
-- **Sprint Review**: 
-Alınan kararlar: ...
+## Daily Scrum: 
+5 kişilik ekibin 3 üyesi ile iletişim kurulamadığı için sadece 2 kişi çalışmak zorunda kaldık ve projeye geç başladık. Bu sebeple yalnızca iki günlük daily scruma sahibiz.
 
-- **Sprint Retrospective:**
-  Sprint Retrospective:
+**1. Gün:** 
++ Yapılanlar: Figma tasarımı üzerinde çalışıldı. Uygulamanın kullanıcı arayüzü tasarlandı ve temel ekranlar oluşturuldu.
++ Karşılaşılan Sorunlar: Tasarım aşamasında birkaç kullanıcı deneyimi (UX) problemi yaşandı, ancak takım içi tartışmalarla çözüldü.
++ Günlük Hedefler: Tüm ana ekranların ve kullanıcı akışlarının tasarımlarına başlamak ve ilerlemek.
 
-İyi Yanlar:
-oIMDb API entegrasyonu bazı engeller çıksa da sonunda gerçekleştirildi.
-oUygulamanın temel arayüzü tasarımı başarıyla tamamlandı.
-oİki kişilik ekip olarak verimli çalıştık ve planlanan işlerin bir kısmını tamamladık.
+**2. Gün:**
++ Yapılanlar: IMDb API ile veri çekimi yapıldı. API entegrasyonu sağlandı ve gerekli veriler uygulamaya başarıyla getirildi, Figma tasarımına devam edildi.
++ Karşılaşılan Sorunlar: API entegrasyonu sırasında bazı bağlantı ve veri formatlama sorunları yaşandı, ancak dokümantasyon ve debug işlemleri ile çözüldü.
++ Günlük Hedefler: API entegrasyonunu tamamlayarak, çekilen verileri uygulama içinde yerleştirmek.
 
-Geliştirilmesi Gereken Yanlar:
 
-oEkip iletişimi konusunda sorunlar yaşandı. 
-oProje planlanandan daha az kişi ile geliştirildiği için geri kalan görevlerin tamamlanması için daha fazla zaman ve iş gücü planlanmalı.
 
-Kararlar:
-oDaily Scrum toplantılarının düzenli olarak yapılmasına devam edilecek.
-oTamamlanmayan görevler bir sonraki sprintte önceliklendirilecek.
+
+# Ürün Durumu: 
+
+Ekran görüntüleri:
+
+**Keşfet Sayfası:** API ile veri çekim denemesi yapıldı, kullanıcı buradan film ve dizi arayabilecek.
+
+![kesfet](https://github.com/seymenay/bootcamp-group52/assets/114770554/071d78ff-cf3c-438f-a28c-a95e7ded1e59)
+
+**Wishlist Sayfası:** Kullanıcının izlediği/izleyeceği dizi ve filmlerin tutulduğu sayfa olacak, henüz tamamlanmadı.
+
+![wishlist](https://github.com/seymenay/bootcamp-group52/assets/114770554/0a3e8d77-8f5a-4801-9184-27745b736c87)
+
+**Profil Sayfası:** Kullanıcının profilini ve favorilediği film ve dizileri gösteren sayfa olacak, henüz tamamlanmadı. 
+
+![profil](https://github.com/seymenay/bootcamp-group52/assets/114770554/4ef93fdf-3741-4a49-9640-5c389d3f2dd4)
+
+Uygulamada tamamlanmamış bölümler için örnek Figma tasarımı:
+
+![detail ve profile](https://github.com/seymenay/bootcamp-group52/assets/114770554/b1f4aeb0-3197-433c-ab99-f7ab29544dc3)
+
+
+# Sprint Review
+Bu sprint boyunca, Figma’da uygulamanın temel arayüzünü tasarımını ve IMDb API entegrasyonunu tamamladık. Keşfet kısmında film ve dizi verilerini başarıyla çekip gösterebiliyoruz. Ancak, diziler ve filmler bölümlerindeki izlenecek/izlenen listeleri ve profil sayfası hala geliştirilme aşamasında.
+
+
+# Sprint Retrospective
+
+**İyi Yanlar:**
+
+o IMDb API entegrasyonu bazı engeller çıksa da sonunda gerçekleştirildi.
+
+o Uygulamanın temel arayüzü tasarımı başarıyla tamamlandı.
+
+o İki kişilik ekip olarak verimli çalıştık ve planlanan işlerin bir kısmını tamamladık.
+
+
+**Geliştirilmesi Gereken Yanlar:**
+
+o Ekip iletişimi konusunda sorunlar yaşandı. 
+
+o Proje planlanandan daha az kişi ile geliştirildiği için geri kalan görevlerin tamamlanması için daha fazla zaman ve iş gücü planlanmalı.
+
+
+**Kararlar:**
+
+o Daily Scrum toplantılarının düzenli olarak yapılmasına devam edilecek.
+
+o Tamamlanmayan görevler bir sonraki sprintte önceliklendirilecek.
  
 
 
