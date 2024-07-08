@@ -69,7 +69,13 @@ Takım Flutter 52
 
 # Sprint 1
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 25 Puan
+## Sprint Notları:
+
+Bu sprint boyunca 5 kişilik ekibimizden sadece 2 kişi aktif olarak çalıştı. Diğer takım üyeleriyle iletişim kuramadık ve projeye geç başladık. Sprint süresince, temel uygulama arayüzünü Figma aracılığıyla oluşturduk ve IMDb API'sini kullanarak birkaç film verisi çekebilen basit bir arayüz geliştirdik.
+
+
+
+**Sprint içinde tamamlanması tahmin edilen puan**: 25 Puan
 Sprint İçinde Tamamlanması Tahmin Edilen Puan:
 Toplamda 25 puanlık iş tahmin edildi. Puanlama şöyle dağıldı:
 
