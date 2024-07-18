@@ -6,7 +6,7 @@ import '../providers/wishlist_provider.dart';
 class MovieDetailScreen extends StatelessWidget {
   final Movie movie;
 
-  MovieDetailScreen({required this.movie});
+  const MovieDetailScreen({super.key, required this.movie});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,6 @@ class MovieDetailScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.network(movie.posterPath),
-
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(

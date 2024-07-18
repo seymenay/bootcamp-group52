@@ -34,7 +34,7 @@ class ApiService {
       if (query != null && query.isNotEmpty) {
         final genreId = genres.entries.firstWhere(
           (entry) => entry.value.toLowerCase() == query.toLowerCase(),
-          orElse: () => MapEntry(-1, ''),
+          orElse: () => const MapEntry(-1, ''),
         ).key;
         
         if (genreId != -1) {
