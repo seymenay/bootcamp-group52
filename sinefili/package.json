@@ -8,6 +8,7 @@
     "test": "test"
   },
   "scripts": {
+    "build": "flutter build web",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
