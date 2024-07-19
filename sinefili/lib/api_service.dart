@@ -7,7 +7,7 @@ class ApiService {
   static const String searchMoviesUrl = '$baseUrl/search/movie';
   static const String genreMoviesUrl = '$baseUrl/discover/movie';
   static const String genreUrl = '$baseUrl/genre/movie/list';
-  static const String apiKey = 'your_tmdb_api_key';
+  static const String apiKey = '0e683f857fb0db4c38839c7bda8fcc0f';
 
   Future<Map<int, String>> fetchGenres() async {
     final response = await http.get(
