@@ -66,8 +66,10 @@ Takım Flutter 52
   - Yoğun hayat temposunda izlemek istedikleri içerikleri takip etmek isteyen gençler ve öğrenciler.
   - Arkadaşlarıyla film ve dizi tavsiyeleri paylaşan ve alan kişiler.
 
+---
 
-# Sprint 1
+<details>
+  <summary> <h1> Sprint 1</h1></summary>
 
 ## Sprint Notları:
 
@@ -163,6 +165,106 @@ o Daily Scrum toplantılarının düzenli olarak yapılmasına devam edilecek.
 
 o Tamamlanmayan görevler bir sonraki sprintte önceliklendirilecek.
  
-
+</details>
 
 ---
+
+
+
+
+<details>
+
+ <summary> <h1> Sprint 2</h1></summary>
+
+## Sprint Notları: 
+5 kişilik ekipten iki kişi çalıştı. Firebase konusunda yaşanan sorun nedeniyle bu kısımda tek kişi (Sena) çalışsa da süreç boyunca iletişim devam etti. Bu sprint boyunca Firebase bağlantısı sağlandı, movie detail - login - register sayfaları iskeleti tamamlandı. Tasarım özelleştirme çalışmaları bu sprintte yer almadı.
+
+**Sprint içinde tamamlanması tahmin edilen puan**:
+Toplamda 40 puanlık iş tahmin edildi. Puanlama şöyle dağıldı:
+
++ Giriş Kayıt Ekranı Oluşturması - 5 Puan
++ Firebase Bağlantısı - 15 Puan
++ Profil Sayfası Oluşturması - 7 Puan
++ Discover Kısmına Search Özelliği Eklenmesi - 3 Puan
++ Movie Detail Sayfası Oluşturması - 10 Puan
+
+**Puan Tamamlama Mantığı:**
+Tahmin edilen 40 puanın 28 puanı tamamlandı. 
+Profil sayfası oluşturulmadığı için 7 puan ve movie detail sayfasına yorum ve puanlama özelliği eklenilmediği için 5 puan tamamlanamadı.
+
+**Backlog Düzeni - Story Seçimleri ve Sprint board update**: 
+Product Backlog ve sprint görevleri, iş gücü seviyelerine göre puanlandırılarak düzenlendi. En önemli ve acil görevler üst sıralara yerleştirildi. Story seçimleri:
+- Giriş Kayıt Ekranı Oluşturması (Tamamlandı) 
+- Firebase Bağlantısı (Tamamlandı)
+- Profil Sayfası Oluşturması (Tamamlanamadı)
+- Discover Kısmına Search Özelliği Eklenmesi (Tamamlandı)
+- Movie Detail Sayfası Oluşturması (Tamamlandı, yorum ekleme ve puanlama kısmı eksik)
+
+Sprint board screenshotları: 
+(Ekran görüntüleri)
+
+## Daily Scrum: 
+
+Daily Scrum toplantılarında her gün ilerleme ve karşılaşılan engeller tartışıldı. Firebase bağlanmada çeşitli problemler yaşandı, çözüldü hatasız çalışma sağlandı. GitHub Actions problemleri sürekli takip edilerek çözüm yolları arandı ancak henüz bulunamadı. Movie detail sayfası oluşturuldu, ancak yorum ekleme ve puanlama kısmı tamamlanamadı.
+
+
+# Ürün Durumu: 
+
+Ekran görüntüleri:
+
+**Giriş ve Kayıt Sayfaları** 
+
+![login](https://github.com/user-attachments/assets/2de10f67-2c14-4223-925f-608cd60f568f) ![register](https://github.com/user-attachments/assets/a4e8185b-a60b-4083-a903-4e90cc4d43b3)
+
+**Keşfet Sayfası:** Film ismi veya türüne göre arama özelliği eklendi.
+
+![discover_search](https://github.com/user-attachments/assets/ce135ef8-66de-41bf-94ec-36ee1aee42cb)
+
+**Keşfet Sayfası:**  Film üzerine tıklandığında detaylı bilgi alınan ve wishliste eklenebilen sayfa.
+
+![detail_screen](https://github.com/user-attachments/assets/f6491c76-697b-4048-9ce0-023f820644c2)
+
+**Wishlist Sayfası:**
+
+![wishlist](https://github.com/user-attachments/assets/dc95d99b-e304-4730-a34b-b22fc32c19b7)
+
+# Sprint Review
+
+Sprint Review toplantısında tamamlanan görevler gözden geçirildi. Giriş kayıt ekranı ve Firebase bağlantısı başarıyla entegre edildi. Discover kısmına arama özelliği eklendi. Movie detail sayfası oluşturuldu, ancak yorum ekleme ve puanlama kısmı eksik kaldı. Profil sayfası tamamlanamadı ve GitHub Actions ile ilgili bazı problemler yaşandı. Bu sorunların çözümü için planlar yapıldı. Ayrıca, arayüzün detaylı özelleştirme tasarımının sonraki adımlarda yapılması kararlaştırıldı.
+
+# Sprint Retrospective
+
+**İyi Yanlar:**
+
+o Giriş kayıt ekranı başarılı bir şekilde tamamlandı ve basit bir arayüz iskeleti sağlandı.
+
+o Firebase bağlantısı sorunsuz şekilde kuruldu.
+
+o Discover kısmına eklenen arama özelliği kullanıcı deneyimini artırdı.
+
+o Movie detail sayfası oluşturuldu ve temel fonksiyonlar eklendi.
+
+**Geliştirilmesi Gereken Yanlar:**
+
+o Profil sayfasının oluşturulması sürecinde daha fazla planlama ve kaynak tahsisi yapılmalı.
+
+o GitHub Actions ile ilgili yaşanan problemler için daha fazla araştırma ve çözüm odaklı çalışma yapılmalı.
+
+o Movie detail sayfasına yorum ekleme ve puanlama fonksiyonları eklenmeli.
+
+o Kullanıcının wishlist'ine eklediği filmlerin kaydedilmesi ve kullanıcı yeniden giriş yaptığında bu filmlere ulaşabilmesi sağlanmalı.
+
+**Kararlar:**
+
+o Profil sayfasının tamamlanması için bir sonraki sprintte daha fazla zaman ve kaynak ayrılması.
+
+o GitHub Actions problemleri için bilgi paylaşımı yapılması.
+
+o Daily Scrum toplantılarında karşılaşılan sorunların daha detaylı ele alınması ve çözüm yollarının hızlıca uygulanması.
+
+o Arayüz detaylı özelleştirme tasarımının sonraki sprintlerde ele alınması.
+
+o İşbirliği arttırılmalı.
+
+
+</details>
