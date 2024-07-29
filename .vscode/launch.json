@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "sinefili_app",
+            "cwd": "sinefili_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sinefili_app (profile mode)",
+            "cwd": "sinefili_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "sinefili_app (release mode)",
+            "cwd": "sinefili_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

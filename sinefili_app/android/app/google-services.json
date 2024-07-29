@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "339721710853",
+    "project_id": "sinefili-app",
+    "storage_bucket": "sinefili-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:339721710853:android:ebf25fe6755239c3559b6c",
+        "android_client_info": {
+          "package_name": "com.example.sinefili_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN_mAnsqQq2yKwxaPgOjspWgA1-JGrekk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
