@@ -21,7 +21,20 @@ class MovieDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(movie.posterPath),
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(15),
+                  child: Image.network(
+                    movie.posterPath,
+                    width: MediaQuery.of(context).size.width * 0.8,
+                    height: MediaQuery.of(context).size.height * 0.7,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Card(
@@ -119,8 +132,8 @@ class MovieDetailScreen extends StatelessWidget {
   }
 
   Widget _buildRatingBar(double rating) {
-    int fullStars = rating ~/ 1;
-    bool hasHalfStar = (rating - fullStars) >= 0.5;
+    int fullStars = (rating / 2).floor();
+    bool hasHalfStar = (rating / 2) - fullStars >= 0.5;
 
     return Row(
       children: List.generate(5, (index) {
@@ -135,4 +148,3 @@ class MovieDetailScreen extends StatelessWidget {
     );
   }
 }
-

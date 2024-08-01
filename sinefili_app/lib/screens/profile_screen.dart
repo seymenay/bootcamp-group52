@@ -1,14 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:image_picker/image_picker.dart';
+import 'dart:io';
+import '../providers/favorites_provider.dart';
 
-class ProfileScreen extends StatelessWidget {
+class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
 
   @override
+  _ProfileScreenState createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+  File? _image;
+
+  Future<void> _pickImage() async {
+    try {
+      final picker = ImagePicker();
+      final pickedFile = await picker.pickImage(source: ImageSource.gallery);
+
+      if (pickedFile != null) {
+        setState(() {
+          _image = File(pickedFile.path);
+        });
+      }
+    } catch (e) {
+      print("Error picking image: $e");
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    var favoritesProvider = Provider.of<FavoritesProvider>(context);
+    var favoriteMovies = favoritesProvider.favorites;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profile'),
-        backgroundColor: Colors.deepPurple, // AppBar rengi
+        backgroundColor: Colors.deepPurple,
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -16,72 +45,31 @@ class ProfileScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                width: 100,
-                height: 100,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(color: Colors.deepPurple, width: 4),
-                ),
-                child: CircleAvatar(
-                  backgroundImage: NetworkImage('https://example.com/profile_picture.jpg'),
-                ),
+              // Profile picture section
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: _image != null ? FileImage(_image!) : null,
+                child: _image == null ? Icon(Icons.person, size: 50) : null,
               ),
-              const SizedBox(height: 16),
-              Text(
-                'Kullanıcı Adı',
-                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.deepPurple),
+              TextButton.icon(
+                icon: Icon(Icons.photo_library),
+                label: Text('Fotoğraf Seç'),
+                onPressed: _pickImage,
               ),
-              const SizedBox(height: 8),
-              Text(
-                'Kullanıcı açıklaması burada yer alabilir.',
-                style: TextStyle(fontSize: 16, color: Colors.grey[700]),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 16),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  _buildStatColumn('100', 'Takipçiler'),
-                  const SizedBox(width: 24),
-                  _buildStatColumn('80', 'Takip Edilenler'),
-                ],
-              ),
-              const SizedBox(height: 24),
-              _buildSectionTitle('Favori Diziler'),
-              _buildFavoriteItem('Dizi 1', 'https://example.com/series1.jpg'),
-              _buildFavoriteItem('Dizi 2', 'https://example.com/series2.jpg'),
-              const SizedBox(height: 24),
+              const SizedBox(height: 20),
+
+              // Profile details
               _buildSectionTitle('Favori Filmler'),
-              _buildFavoriteItem('Film 1', 'https://example.com/movie1.jpg'),
-              _buildFavoriteItem('Film 2', 'https://example.com/movie2.jpg'),
-              const SizedBox(height: 24),
-              _buildSectionTitle('Yorumlar'),
-              _buildCommentItem('Dizi 1', 'Bu dizi harika!', 5),
-              _buildCommentItem('Film 1', 'Bu film çok eğlenceliydi.', 4),
+              favoriteMovies.isEmpty
+                  ? const Text('No favorite movies.')
+                  : Column(
+                      children: favoriteMovies.map((movie) {
+                        return _buildFavoriteItem(movie.title, movie.posterPath);
+                      }).toList(),
+                    ),
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _buildStatColumn(String value, String label) {
-    return Column(
-      children: [
-        Text(value, style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.deepPurple)),
-        const SizedBox(height: 4),
-        Text(label, style: TextStyle(color: Colors.grey[600])),
-      ],
-    );
-  }
-
-  Widget _buildSectionTitle(String title) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0),
-      child: Text(
-        title,
-        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.deepPurple),
       ),
     );
   }
@@ -104,28 +92,13 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildCommentItem(String title, String comment, int rating) {
-    return Card(
-      elevation: 4,
-      margin: const EdgeInsets.symmetric(vertical: 8.0),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: ListTile(
-        contentPadding: const EdgeInsets.all(8.0),
-        title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
-        subtitle: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(comment),
-            const SizedBox(height: 4),
-            Row(
-              children: List.generate(rating, (index) => const Icon(Icons.star, color: Colors.amber)),
-            ),
-          ],
-        ),
+  Widget _buildSectionTitle(String title) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8.0),
+      child: Text(
+        title,
+        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.deepPurple),
       ),
     );
   }
 }
-

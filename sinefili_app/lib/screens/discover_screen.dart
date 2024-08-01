@@ -82,7 +82,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('Release Date: ${movie.releaseDate}'),
-                      Text('Rating: ${movie.rating.toString()}'),
+                      Text('Rating: ${movie.rating.toInt()}/10'),
                       Text('Genres: ${movie.genres.join(', ')}'),
                     ],
                   ),
