@@ -268,3 +268,89 @@ o İşbirliği arttırılmalı.
 
 
 </details>
+
+<details>
+<summary> <h1> Sprint 3</h1></summary>
+
+## Sprint Notları: 
+Ekibimizde sadece Seymen Ay ve Emine Sena Top çalıştı. Bu son sprint’te profil kısmı kodlandı ve tasarımı geliştirildi ayrıca login ve register sayfalarında da tasarımda geliştirmeler yapıldı.
+
+**Backlog Düzeni - Story Seçimleri ve Sprint board update**: 
+Kalan son tasarım ve geliştirme rötuşları yapıldı.
+
+Ürünün Tamamlanan Özellikleri:
+- Giriş ve kaydolma sayfasının aktif şekilde çalışıyor olması.
+- Başarılı bir firebase bağlantısı.
+- Profil sayfasının oluşturulması.
+- Filmler ve diziler sayfası yalınlaştırılarak ‘Discover’ adlı çatıda toplanmıştır ve binlerce filmler ve diziler aratılabilir, IMBD puanları ve inceleme yazıları, ratingleri ve türü başarılı bir şekilde listelenmiştir. 
+- Wishlist’e özelliği başarılı şekilde çalışmaktadır.
+
+Ürünün Tamamlanamayan Özellikleri:
+-Filmlerin hangi platformda yayında olduğunun gösterilmesi.
+-İzlenenler kısmı yapılmamıştır.
+-Profil sayfasının tamamlanamayan özellikleri; kullanıcının profil resmi, takipçileri, takip ettikleri, favori dizileri, favori filmleri (ve attığı yorumlar), dizi veya film için yorum yapabilir ve puanlama verebilirler.
+
+## Daily Scrum: 
+
+Daily Scrum toplantılarında kalan kısımlar üzerinde kararlar verildi. Yorum ekleme ve puanlama kısmı tamamlanamadı. Profil kısmı tamamlanamadı
+
+
+# Ürünün Son Hali: 
+
+Ekran görüntüleri:
+
+**Giriş ve Kayıt Sayfaları** 
+
+![acılıs](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/ac%C4%B1l%C4%B1s.png) 
+![login](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/login.png) 
+![register](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/register.png)
+
+**Keşfet Sayfası:** 
+
+![discover](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/discover.png)
+
+**Profil Sayfası:**  
+
+![profile](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/profile.png)
+
+**Wishlist Sayfası:**
+
+![wishlist](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/wishlist.png)
+
+# Sprint Review
+
+Sprint Review toplantısında yapılan ve yapılmayan her şey gözden geçirildi. Son kalan tasarımlar ve kod düzeltmeleri yapıldı. Movie detail sayfası tamamlandı, ancak yorum ekleme ve puanlama kısmı eksik kaldı. Profil sayfası tamamlanamadı. Ayrıca, Sena arkadaşımın özverili çalışması ürünün tamamlanmasındaki başarısı yadsınamaz seviyededir.
+
+# Sprint Retrospective
+
+**İyi Yanlar:**
+
+o Çalışan bir ürün ortaya çıkarıldı.
+
+o Firebase bağlantısı sorunsuz şekilde yapıldı.
+
+o Kişiler binlerce filme tek tıkla aratma yapabiliyor.
+
+o Sevdikleri filmleri kendi listelerine ekleyebiliyorlar.
+
+**Geliştirilmesi Gereken Yanlar:**
+
+o Profil sayfası tamamlanabilirdi.
+
+o Takım içinde görev dağılımı eşit bir şekilde yapılabilirdi.
+
+o Movie detail sayfasına yorum ekleme ve puanlama fonksiyonları eklenebilirdi.
+
+o Kullanıcının wishlist'e eklediği filmlerin kaydedilmesi ve kullanıcı yeniden giriş yaptığında bu filmlere ulaşabilmesi sağlanabilirdi.
+
+**Kararlar:**
+
+o Görev dağımlarının en baştan net çizgilerle belirlenmesi.
+
+o Daha aktif ve sağlıklı bir iletişim zeminin kurulması.
+
+o Daha proaktif bir yaklaşım sergilenmesi.
+
+o Daha planlı ve paylaşımlı ilerlenebilirdi.
+
+</details>
