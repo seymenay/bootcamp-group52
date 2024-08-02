@@ -301,21 +301,22 @@ Ekran görüntüleri:
 
 **Giriş ve Kayıt Sayfaları** 
 
-![acılıs](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/ac%C4%B1l%C4%B1s.png) 
-![login](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/login.png) 
-![register](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/register.png)
+![acılıs](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/images/ac%C4%B1l%C4%B1s.jpeg)
+![login](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/images/login.jpeg)
+![register](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/images/register.jpeg)
 
 **Keşfet Sayfası:** 
 
 ![discover](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/discover.png)
+![discover2](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/images/discover.jpeg)
 
 **Profil Sayfası:**  
 
-![profile](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/profile.png)
+![profile](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/images/profile.jpeg)
 
 **Wishlist Sayfası:**
 
-![wishlist](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/wishlist.png)
+![wishlist](https://github.com/seymenay/bootcamp-group52/blob/main/bootcampimg/images/wishlist.jpeg)
 
 # Sprint Review
 
