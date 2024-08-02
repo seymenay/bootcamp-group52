@@ -292,7 +292,7 @@ Kalan son tasarım ve geliştirme rötuşları yapıldı.
 
 ## Daily Scrum: 
 
-Daily Scrum toplantılarında her gün ilerleme ve karşılaşılan engeller tartışıldı. Firebase bağlanmada çeşitli problemler yaşandı, çözüldü hatasız çalışma sağlandı. GitHub Actions problemleri sürekli takip edilerek çözüm yolları arandı ancak henüz bulunamadı. Movie detail sayfası oluşturuldu, ancak yorum ekleme ve puanlama kısmı tamamlanamadı.
+Daily Scrum toplantılarında kalan kısımlar üzerinde kararlar verildi. Yorum ekleme ve puanlama kısmı tamamlanamadı. Profil kısmı tamamlanamadı
 
 
 # Ürünün Son Hali: 
