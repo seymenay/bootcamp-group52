@@ -268,7 +268,10 @@ o İşbirliği arttırılmalı.
 
 
 </details>
+
+<details>
 <summary> <h1> Sprint 3</h1></summary>
+
 ## Sprint Notları: 
 Ekibimizde sadece Seymen Ay ve Emine Sena Top çalıştı. Bu son sprint’te profil kısmı kodlandı ve tasarımı geliştirildi ayrıca login ve register sayfalarında da tasarımda geliştirmeler yapıldı.
 
@@ -349,3 +352,5 @@ o Daha aktif ve sağlıklı bir iletişim zeminin kurulması.
 o Daha proaktif bir yaklaşım sergilenmesi.
 
 o Daha planlı ve paylaşımlı ilerlenebilirdi.
+
+</details>
