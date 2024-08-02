@@ -19,7 +19,7 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
   @override
   void initState() {
     super.initState();
-    _fetchMovies(null); // Pass null to fetchMovies initially
+    _fetchMovies(null); // Başlangıçta fetchMovies'e null gönder
   }
 
   void _fetchMovies(String? query) async {
@@ -50,7 +50,8 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Discover'),
+        backgroundColor: const Color(0xFF15141F),
+        title: const Text('Discover', style: TextStyle(color: Colors.white)),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(50.0),
           child: Padding(
@@ -59,44 +60,49 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
               controller: _searchController,
               decoration: const InputDecoration(
                 hintText: 'Search for movie or filter by genre...',
-                prefixIcon: Icon(Icons.search),
+                hintStyle: TextStyle(color: Colors.white),
+                prefixIcon: Icon(Icons.search, color: Colors.white),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(8.0)),
                 ),
               ),
+              style: const TextStyle(color: Colors.white),
               onChanged: _filterMovies,
             ),
           ),
         ),
       ),
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : ListView.builder(
-              itemCount: _movies.length,
-              itemBuilder: (context, index) {
-                final movie = _movies[index];
-                return ListTile(
-                  leading: Image.network(movie.posterPath),
-                  title: Text(movie.title),
-                  subtitle: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Release Date: ${movie.releaseDate}'),
-                      Text('Rating: ${movie.rating.toInt()}/10'),
-                      Text('Genres: ${movie.genres.join(', ')}'),
-                    ],
-                  ),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MovieDetailScreen(movie: movie),
-                      ),
-                    );
-                  },
-                );
-              },
-            ),
+      body: Container(
+        color: const Color(0xFF15141F),
+        child: _isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : ListView.builder(
+                itemCount: _movies.length,
+                itemBuilder: (context, index) {
+                  final movie = _movies[index];
+                  return ListTile(
+                    leading: Image.network(movie.posterPath),
+                    title: Text(movie.title, style: const TextStyle(color: Colors.white)),
+                    subtitle: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Release Date: ${movie.releaseDate}', style: const TextStyle(color: Colors.white)),
+                        Text('Rating: ${movie.rating.toInt()}/10', style: const TextStyle(color: Colors.white)),
+                        Text('Genres: ${movie.genres.join(', ')}', style: const TextStyle(color: Colors.white)),
+                      ],
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MovieDetailScreen(movie: movie),
+                        ),
+                      );
+                    },
+                  );
+                },
+              ),
+      ),
     );
   }
 }

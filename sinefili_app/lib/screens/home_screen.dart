@@ -14,36 +14,40 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Wishlist'),
+        backgroundColor: const Color(0xFF15141F),
+        title: const Text('Wishlist', style: TextStyle(color: Colors.white)),
       ),
-      body: wishlist.isEmpty
-          ? const Center(child: Text('No movies in your wishlist.'))
-          : ListView.builder(
-              itemCount: wishlist.length,
-              itemBuilder: (context, index) {
-                final movie = wishlist[index];
-                return ListTile(
-                  leading: Image.network(movie.posterPath),
-                  title: Text(movie.title),
-                  subtitle: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Release Date: ${movie.releaseDate}'),
-                      Text('Rating: ${movie.rating}'),
-                      Text('Genres: ${movie.genres.join(', ')}'),
-                    ],
-                  ),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MovieDetailScreen(movie: movie),
-                      ),
-                    );
-                  },
-                );
-              },
-            ),
+      body: Container(
+        color: const Color(0xFF15141F),
+        child: wishlist.isEmpty
+            ? const Center(child: Text('No movies in your wishlist.', style: TextStyle(color: Colors.white)))
+            : ListView.builder(
+                itemCount: wishlist.length,
+                itemBuilder: (context, index) {
+                  final movie = wishlist[index];
+                  return ListTile(
+                    leading: Image.network(movie.posterPath),
+                    title: Text(movie.title, style: const TextStyle(color: Colors.white)),
+                    subtitle: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('Release Date: ${movie.releaseDate}', style: const TextStyle(color: Colors.white)),
+                        Text('Rating: ${movie.rating}', style: const TextStyle(color: Colors.white)),
+                        Text('Genres: ${movie.genres.join(', ')}', style: const TextStyle(color: Colors.white)),
+                      ],
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MovieDetailScreen(movie: movie),
+                        ),
+                      );
+                    },
+                  );
+                },
+              ),
+      ),
     );
   }
 }

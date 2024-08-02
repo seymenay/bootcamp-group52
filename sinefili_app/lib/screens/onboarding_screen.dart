@@ -79,7 +79,7 @@ PageRouteBuilder _createCustomFadeScalePageRoute(Widget page) {
                   ),
                   SizedBox(height: 16),
                   Text(
-                    'Save your favorite movies, create your wishlist and write your unique notes!',
+                    'Save your favorite movies and create your wish list. Keep your movies together!',
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white,

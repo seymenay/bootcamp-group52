@@ -103,5 +103,6 @@ class Movie {
       hasError: json['object_progress_event'] != null, // Assuming this key indicates the error
     );
   }
+
 }
 
